@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>your information</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/flexible.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/ourcss.css">
+    <script type="text/javascript">
+    	function tomale(){
+    		var male = document.getElementById("male");
+    		var female = document.getElementById("female");
+   			male.setAttribute('src',"img/btn_button_pressed.png");
+   			female.setAttribute('src',"img/btn_button_normal.png");
+    	}
+    	function tofemale(){
+    		var male = document.getElementById("male");
+    		var female = document.getElementById("female");
+   			male.setAttribute('src',"img/btn_button_normal.png");
+   			female.setAttribute('src',"img/btn_button_pressed.png");
+    	}
+        function jiubufa(){
+            alert("略略略略就不发<(￣︶￣)>");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="large-head">
+        填写您的基本信息
+    </div>
+    <div class="white-out">
+        <label class="normal-label f45">名称</label>
+        <input class="white-input f45" placeholder="输入微商名称"></input>
+        <p class="small-right" style="color: red">名称重复</p>
+        <img class="small-right img51" src="img/prompt.png">
+    </div>
+    <hr />
+    <div class="white-out">
+        <label class="normal-label f45">手机号</label>
+        <input class="white-input f45" placeholder="输入微商名称"></input>
+        <p class="small-right fblue" onclick="jiubufa()">发送验证码</p>
+    </div>
+    <hr />
+    <div class="white-out">
+        <label class="normal-label f45">验证码</label>
+        <input class="white-input f45" placeholder="请输入4位短信验证码"></input>
+    </div>
+    <hr/>
+    <div class="white-out">
+        <label class="normal-label f45">密码</label>
+        <input class="white-input f45" placeholder="8-20位字母数字组合"></input>
+    </div>
+    <hr />
+    <div class="white-out">
+        <label class="normal-label f45">银行卡</label>
+        <input class="white-input f45" placeholder="请输入卡号"></input>
+    </div>
+    <hr/>
+    <div class="white-out">
+        <label class="normal-label f45">姓名</label>
+        <input class="white-input f45" placeholder="真实姓名"></input>
+    </div>
+    <hr/>
+    <div class="white-out">
+        <label class="normal-label f45">身份证</label>
+        <input class="white-input f45" placeholder="请输入18位身份证号码"></input>
+    </div>
+    <hr/>
+    <div class="white-out">
+        <label class="normal-label f45">年龄</label>
+        <input class="white-input f45" placeholder="输入年龄"></input>
+    </div>
+    <hr/>
+    <div class="white-out f45">
+        <label class="normal-label f45">性别</label>
+        男
+        <img id="male" class="img51" onclick="tomale()" src="img/btn_button_normal.png" style="position: relative;left: 0.15rem;">
+        <div style="display: inline-block;width: 1.3889rem;height: 0.5rem;"></div>
+        女
+        <img id="female" class="img51" onclick="tofemale()" src="img/btn_button_pressed.png" style="position: relative;left: 0.15rem;">
+    </div>
+    <hr />
+    <div class="white-out f45" style="height: 2.7rem;">
+        <p class="f45" style="margin-left: 0.4444rem;line-height: 0.8rem;">身份证正背面清晰照</p>
+        <img class="img180" src="img/xiaohuangren.png">
+        <div class="img180" style="background-image:url(img/xiaohuangren.png);background-size: cover;">
+            <div class="img180" style="background: #1e1e1e;opacity:0.3;margin: 0 0;top: 0;">
+            </div>
+        </div>
+        <div class="img180" style="background-image:url(img/xiaohuangren.png);background-size: cover;">
+            <div class="img180" style="background: #1e1e1e;opacity:0.3;margin: 0 0;top: 0;">
+            </div>
+        </div>
+        <div class="img180" style="background-image:url(img/frame.png);background-size: cover;">
+        </div>
+        <img class="img51" src="img/prompt.png" style="position: relative;right: 5.27rem;top: -0.5rem">
+        <div style="color:white;font-size: 0.6rem;position: relative;display: inline-block;right: -4.6rem;top: -1.5rem">50%</div>
+        <img src="img/plis.png" style="width: 0.84259rem;height: 0.84259rem;position: relative;top: -1.3rem;right: -5.5rem;">
+    </div>
+    <div class="kidCenter" style="margin-top: 1.76rem;">
+        <button class="large-green-btn" onclick="location='2-5.html'">确定</button>
+    </div>
+    <div style="height: 0.47rem"></div>
+</body>
+
+</html>

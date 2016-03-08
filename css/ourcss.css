@@ -1,0 +1,300 @@
+/*
+目前实现的样式有：
+
+
+
+元素：
+
+
+大头 large-head（就是几个字占了很大一片那个东西）
+
+长且绿的按钮 large-green-btn
+长且白的按钮 large-white-btn
+小且绿的按钮 small-green-btn(比如获取验证码)
+
+51px的图片 img51
+180px的图片 img180
+
+白框 white-out
+白色无边输入框 white-input
+
+小灰字 small-gray
+小黑字 small-black
+
+黑色标签 black-label
+灰色标签 gray-label
+
+右边的小文字 small-right
+
+淡灰色的空白 gray-space
+小竖线 small-line
+
+
+功能：
+字体设为绿色 fgreen
+字体设为蓝色 fblue
+字体设为45px f45
+字体设为54px f54
+右浮 text-right
+上下居中 up-down
+子元素居中 kidCenter
+
+
+可能用到的bootstrap内的样式：
+当前元素靠右：pull-right;
+
+1:0.00925;
+30：0.2777
+42:0.38888;
+45：0.41666
+48:0.44444
+51:0.4722222;
+52:0.481481;
+54:0.5;
+66:0.6111
+60：0.5555
+70:0.6481481481;
+90：0.83333
+91:0.8425925925;
+120:1.1111;
+150：1.3888
+180:1.6666;
+204:1.8888;
+206:1.907407407;
+210：1.9444
+222:2.0555;
+240:2.2222;
+270:2.5;
+384:3.55555;
+446:4.1296296296;
+450:4.16666;
+480:4.4444;
+984：:9.111
+
+
+
+*/
+
+*{
+	font-family: 'Microsoft YaHei';
+}
+
+html{
+	font-weight: normal;
+	background-color: #f4f4f4;
+
+}
+
+hr{
+	margin: 0 0;
+	border:none;
+	height: 1px;
+	background-color:#e4e4e4;
+}
+
+table{
+    border:0;
+    text-align: center;
+}
+tr{
+	height: 1.3889rem;
+}
+td{
+    border-top:0; 
+    border-left:0; 
+    border-right:0;
+    border-bottom: 1px #DCDEE0 solid;
+    padding: 0.2rem 0.2rem;
+}
+
+.normal-img{
+	display: inline-block;
+	margin: 0 0;
+	position: relative;
+}
+
+.normal-label{
+	line-height: 1.3889rem;
+	height: 1.3889rem;
+	margin-left: 0.4444rem;
+	width: 2rem;
+	display:inline-block; 
+}
+
+/*大头*/
+.large-head{
+	text-align: center;
+	padding: 2.5rem 0;
+	color: #189ff7;
+	font-size: 0.7rem;
+}
+
+/*长且绿的按钮*/
+.large-green-btn{
+	width: 9.111rem;
+	height: 1.111rem;
+	border: none;
+	font-size: 0.5rem;
+	background-color: #85ca33;
+	color: white;
+	border-radius:0.1rem;
+}
+
+/*长且白的按钮*/
+.large-white-btn{
+	width: 9.111rem;
+	height: 1.111rem;
+	border: none;
+	font-size: 0.5rem;
+	background-color: white;
+	color: #85ca33;
+	border-radius:0.1rem;
+	border: 1px #85ca33 solid;
+}
+
+/*短且绿的按钮*/
+.small-green-btn{
+	border: none;
+	height: 0.9rem;
+	padding: 0.1rem 0.1rem;
+	line-height: 0.6rem;
+	margin: 0.3rem 0.3rem;
+	background-color: #6fbf42;
+	color: white;
+}
+
+/*51px的小图片*/
+div .img51{
+	display: inline-block;
+	width: 0.4722222rem;
+	height: 0.4722222rem;
+	line-height: 1.3889rem;
+	margin: 0 0;
+	position: relative;
+	top: 0.1rem;
+}
+.img51{
+	display: inline-block;
+	width: 0.4722222rem;
+	height: 0.4722222rem;
+	line-height: 1.3889rem;
+	margin: 0 0;
+	position: relative;
+	top: 0.1rem;
+}
+
+.img180{
+	display: inline-block;
+	width: 1.66667rem;
+	height: 1.66667rem;
+	line-height: 1.66667rem;
+	margin:0 0 0 0.27778rem;
+	position: relative;
+	top: 0.1rem;
+}
+
+/*白框*/
+.white-out{
+	width: 10rem;
+	height: 1.3889rem;
+	border: none;
+	margin: 0 0;
+	background-color: white;
+
+}
+
+
+/*灰色标签*/
+.gray-label{
+	color: #ced1d1;
+}
+
+/*偏右的label*/
+.right-label{
+	width: 6.5rem;
+	margin: 0 0;
+	text-align: right;
+	padding-right: 0.5rem;
+}
+
+/*白色无边输入框*/
+.white-input{
+	background-color: white;
+	border: none;
+	width: 4.444rem;
+	height: 0.9rem;
+	line-height: 0.9rem;
+}
+
+/*淡灰色空白*/
+.gray-space{
+	border: none;
+	width: 10rem;
+	height: 0.5rem;
+	margin: 0 0;
+	background-color: #F7F7F7;
+}
+
+/*小灰字*/
+.small-gray{
+	color: #B3B4AE;
+}
+
+/*小黑字*/
+.small-black{
+	color: black;
+}
+
+/*右边的小文字*/
+.small-right{
+	display: inline-block;
+	margin-left: 0.481481rem;
+	line-height: 1.3889rem;
+}
+
+/*小竖线*/
+.small-line{
+	width: 1px;
+	height: 0.8333rem;
+	background-color: #e4e4e4;
+	display:inline-block; 
+	position: relative;
+	top: 0.27778rem;
+}
+
+/*字体右浮*/
+.text-right{
+	text-align: right;
+}
+
+/*上下居中*/
+.up-down{
+	margin-top:auto;
+	margin-bottom: auto;
+}
+
+
+/*使子元素居中*/
+.kidCenter{
+	text-align: center;
+}
+
+/*使字体为45px*/
+.f45{
+	font-size: 0.416667rem;
+}
+
+/*使字体为54px*/
+.f54{
+	font-size: 0.5rem;
+}
+
+/*使字体为绿色*/
+.fgreen{
+	color: #85ca33;
+}
+
+/*使字体为蓝色*/
+.fblue{
+	color: #189ff7;
+}
